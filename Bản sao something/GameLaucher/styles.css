@@ -1,0 +1,226 @@
+*{
+    
+}
+body{
+    background-color: gray;
+    overflow: hidden;
+}
+.gameContainer{
+    display: grid;
+     width: 750px;
+     height: 750px;
+     outline: 1px solid black;
+     position: absolute;
+     left:400px;
+     top:0px;
+     transform: scale(0.9);
+     background-color: whitesmoke;
+     padding: 0;
+}
+canvas{
+    padding: 0;
+}
+#playerInfo{
+    background-color: azure;
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+}
+#playerScore{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+#choose{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    
+}
+#choose>img{
+    margin-top: 10px;}
+#weight{
+    position: absolute;
+    left:282px;
+    top:552px;
+    font-size: 35px;
+    }
+    #weight>p{
+        background-color: cornsilk;
+        box-shadow: darkgray 3px 3px 10px;
+        border: black solid 2px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+#playerName{
+    width: 200px;
+    padding-top: 10px;
+}
+#playerScore{
+padding-bottom: 10px;
+}
+#playerImg{
+    margin-left: 20px;
+    height:150px;
+    border-radius: 90px;
+}
+
+
+
+#playerName2{
+    position: absolute;
+    top:75px;
+    width: 200px;
+    margin-left : 0px;
+    padding-top: 10px;
+    transform: rotate(90deg);
+}
+#playerScore2{
+padding-bottom: 10px;
+position: absolute;
+transform: rotate(90deg);
+}
+#playerImg2{
+    margin-left: 20px;
+    height:150px;
+    border-radius: 90px;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 10px;
+    left: 100px;
+}
+#playerInfo2{
+    position: absolute;
+    left: 1150px;
+    transform: rotate(270deg);
+    top:350px;
+    background-color: rgb(255, 150, 167);
+    width: 290px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    border: 2px black solid;
+}
+#playerScore2{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+#col {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left:1113.5px;
+    line-height: 13.5px;
+    top:24px;
+    padding-top: 1px;
+    font-size: 12px;
+    background-color: azure;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    text-align: center;
+}
+#col>p{
+    border-bottom: 1px solid black;
+}
+#row{
+    text-align: center;
+    position: absolute;
+    top:7.8px;
+    left: 436.5px;
+    letter-spacing: 1.23px;
+    font-size: 12px;
+    background-color: azure;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    text-align: center;
+    padding-left: 3px;
+    height: 14px;
+}
+#row>p{
+    border-left: 1px solid black;
+}
+#coordinate{
+    top:502px;
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    left:220px;
+    border: 2px black solid;
+}
+#chatLog::-webkit-scrollbar {
+    width: 6px;
+    background-color: white;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} 
+#chatLog::-webkit-scrollbar-thumb {
+    background-color: #000000;
+}
+#chatLog{
+    border: 2px black solid;
+    top: 200px;
+    left:220px;
+    position: absolute;
+    width: 197px;
+    height: 300px;
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    
+    }
+    #cod{
+        background-color: white;
+        height: 36px;
+        width: 43px;
+        border: 2px black solid;
+        position: absolute;
+        top:502px;
+        left:378px;
+    }
+    #winner{
+        font-size: 24px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: #ffe29a 3px 3px 5px;
+        position: absolute;
+        top: 9000px;
+        left: 300px;
+    }
+    #loser{
+        font-size: 24px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: #ffe29a 3px 3px 5px;
+        position: absolute;
+        /* top: 340px;
+        left: 1150px; */
+        top: 9000px;
+    }
+    #plus{
+        font-size: 40px;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: #ffe29a 3px 3px 5px;
+        position: absolute;
+        transform: rotate( -10deg); 
+        /* top: 340px;
+        left: 1250px; */
+        top: 9000px;
+    }
+    #minus{
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-shadow: #ffe29a 3px 3px 5px;
+        position: absolute;
+        /* top: 66px;
+        left: 370px; */
+        top: 9000px;
+        transform: rotate( -10deg); 
+    }
+    #Stop{
+        font-size: 200px;
+        position: absolute;
+        top: 9000000000000px;
+        left: 500px;
+    }

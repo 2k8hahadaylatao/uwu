@@ -1,0 +1,80 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+#playerImg{
+    border: black 10px solid;
+    border-radius: 50px;
+}
+body{
+    overflow: hidden;
+    background-color: rgb(254,240,168);
+}
+#user{
+    border: rgb(223,177,108) solid 15px;
+    padding-top: 10px;
+    border-radius: 30px;
+    padding-left: 10px;
+    background-color: rgb(244,228,199) ;
+    width: 420px;
+}
+#name{
+    margin-left: 310px;
+    position: absolute;
+    top:20px;
+    font-size: 20px;
+    z-index:9999;
+    
+}
+#namePlayer{
+    display: flex;
+    flex-direction: row;
+}
+#nameTitle{
+    margin-left: 250px;
+    position: absolute;
+    top:20px;
+    font-size: 20px;
+    z-index:9999;
+}
+
+#rankPlace{
+    margin-left: 250px;
+    position: absolute;
+    top:60px;
+    font-size: 20px;
+    z-index:9999;
+    padding-left: 10px;
+    border-left: 1px black solid;
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    border-top-left-radius: 50px;
+    box-shadow: black 1px 1px ;
+    padding-bottom: -10px;
+}
+#rank{
+    margin-top: -20px;
+    margin-left: 40px;
+    
+}
+#start{
+    margin-top: 90px;
+    margin-left: 150px;
+    width: 180px;
+    border-radius: 10px;
+    background-color:rgb(205,147,84) ;
+    border: 5px solid rgb(167,147,129);
+    box-shadow: rgb(130,102,102) 3px 3px 1px;
+    height: 70px;
+}
+#scoreBoard{
+    position: absolute;
+    left:600px;
+    top:10px;
+    width: 700px;
+    text-align: center;
+    height: 880px;
+    background-color: rgb(143,131,153);
+    display: flex;
+    flex-direction: column;
+}

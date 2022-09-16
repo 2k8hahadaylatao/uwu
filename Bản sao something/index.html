@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang đăng nhập</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+  <div id="title">
+  <h1> ĐĂNG NHẬP </h1>
+  <p>Tạo tài khoản mới của riêng bạn</p>
+  </div>
+  <div id="creat">
+    <div id="creatAcc">
+      <div id="box">
+        <h1 id="creatNew">+</h1>
+      </div>
+      <hr>
+    </div>
+
+    <div id="new">
+
+    </div>
+  </div>
+  <a href="/assets/puffer.gif" id="puferFish"></a>
+  <div id="login">
+    <h1 id="TitleLog">☆Trang đăng nhập☆</h1>
+    <input type="text" id="loginGmail" placeholder="Tên đăng nhập">
+    <button id="clickToLog">Đăng nhập</button>
+    <input type="password" id="loginPass" placeholder="Mật khẩu"><i class="fa-solid fa-eye fa-2x" id="eye"></i>
+    
+    <a href="" id="loginProblem">Quên mật khẩu?</a>
+  </div>
+  <div id="rotate">
+    <img id="rotateImg" src="/assets/reArrow.png" alt="">
+  </div>
+  <div id="signin">
+    <h1 id="TitleSign">☆Trang đăng ký☆</h1>
+    <input type="text" id="signinGmail" placeholder="Nhập tên đăng nhập của bạn">
+    <input type="password" id="signinPass" placeholder="Mật khẩu"><i class="fa-solid fa-eye fa-2x" id="eyeS"></i>
+    <button id="clickToSign">Đăng kí</button>
+  </div>
+    <script src="/js/index.js"></script>
+    <script src="/js/data.js" type="module"></script>
+    <script src="/js/class.js" type="module" ></script>
+      <style>
+        html{
+    overflow: hidden;
+}
+body{
+    background-color: rgb(249, 249, 249);
+}
+#title{
+    position: absolute;
+    left: 50px;
+    top:15px;
+    transition-duration: 2s;
+}
+#title>h1{
+    color: rgb(145, 46, 145);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-top: 1px rgb(145, 46, 145) solid;
+    padding-top: 10px;
+}
+#title>p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    padding-bottom: 10px;
+    border-bottom: 1px rgb(145, 46, 145) solid;
+}
+#creat{
+    border: black solid 1px;
+    position: absolute;
+    left: 50px;
+    top:150px;
+    height: 500px;
+    width: 373px;
+    background-color: cornsilk;
+}
+#creatAcc{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 80px;
+    width: 280px;
+    margin-left: 27px;
+    border: 1px black solid ;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: rgb(50, 48, 48) 0px 0px 10px;
+    transition-duration: 1s; 
+}
+#creatAcc:hover{
+    margin-top: 23px;
+    margin-left: 30px;
+    transition-duration: 1s;
+    box-shadow: rgb(50, 48, 48) -5px 7px 10px;
+}
+#box{
+    
+    content: "+";
+    height: 40px;
+    width: 40px;
+    background-color: gray ;
+    border-radius: 30px;
+    border: 1px gray solid;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: black -1px 1px 5px;
+    margin-left: 100px;
+    transition-duration: 1s;
+}
+#box>h1{
+    
+    color: white;
+   
+    margin-top: 0px;
+    margin-left: 11px;
+    text-shadow: black 1px 1px 10px;
+    
+}
+#login{
+    position: absolute;
+    left:650px;
+    top:150px;
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    border: 2px solid gray;
+    box-shadow: -5px 2px 5px darkgray;
+    height: 400px;
+    background-color: pink;
+}
+#login>h1{
+    background-color: rgb(255, 219, 225);
+    position: absolute;
+    color: rgb(145, 46, 145);
+    font-family:sans-serif;
+    font-weight: 900;
+    text-shadow: -2px 1px violet;
+    border: rgb(155, 51, 179) 4px solid ;
+    box-shadow: rgb(155, 51, 179) -4px 2px ;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-top: 6px;
+    margin-bottom: 50px;
+    top:-60px;
+    right:-75px;
+    font-size: 40px;
+}
+
+#login>button{
+    font-size: 16px;
+    margin-left:25px;
+    margin-top: 30px;
+    height: 40px;
+    width: 328px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(222, 222, 222);
+    text-shadow: -2px 1px violet ;
+    background-color: rgb(214, 104, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#login>button:hover{
+    color: rgb(255, 255, 255);
+}
+#loginProblem{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 240px;
+    color: rgb(145, 46, 145);
+}
+#loginProblem:hover{
+    margin-left: 234px;
+    font-size: 18px;
+    color:violet;
+}
+#loginGmail{
+    margin-right: 30px;
+    margin-top: 70px;
+    margin-left:25px;
+    width: 320px;
+    height: 40px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(145, 46, 145);
+    text-shadow: -2px 1px violet ;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+#loginPass{
+    margin-right: 30px;
+    margin-top: 25px;
+    margin-left:25px;
+    width: 320px;
+    height: 40px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(145, 46, 145);
+    text-shadow: -2px 1px violet ;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+#rotate>img{
+    width: 100px;
+    position: absolute;
+    left:980px;
+    top:510px;
+    transform: rotate(300deg);
+    transition-duration: 1s;
+    z-index: 999999999;
+}
+#rotate>img:hover{
+    width: 100px;
+    position: absolute;
+    left:980px;
+    top:510px;
+    transform: rotate(360deg);
+    transition-duration: 1s;
+}
+#signin{
+    position: absolute;
+    left:1900px;
+    top:150px;
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    border: 2px solid gray;
+    box-shadow: -5px 2px 5px darkgray;
+    height: 400px;
+    background-color: pink;
+}
+#signin>h1{
+    background-color: rgb(255, 219, 225);
+    position: absolute;
+    color: rgb(145, 46, 145);
+    font-family:sans-serif;
+    font-weight: 900;
+    text-shadow: -2px 1px violet;
+    border: rgb(155, 51, 179) 4px solid ;
+    box-shadow: rgb(155, 51, 179) -4px 2px ;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-top: 6px;
+    margin-bottom: 50px;
+    top:-60px;
+    right:-75px;
+    font-size: 40px;
+}
+
+#signin>button{
+    font-size: 16px;
+    margin-left:25px;
+    margin-top: 30px;
+    height: 40px;
+    width: 328px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(222, 222, 222);
+    text-shadow: -2px 1px violet ;
+    background-color: rgb(214, 104, 214);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#signin>button:hover{
+    color: rgb(255, 255, 255);
+}
+#signinProblem{
+    margin-bottom: 20px;
+    margin-left: 220px;
+    color: rgb(145, 46, 145);
+}
+#signinProblem:hover{
+    margin-left: 214px;
+    font-size: 18px;
+    color:violet;
+}
+#signinGmail{
+    margin-right: 30px;
+    margin-top: 50px;
+    margin-left:25px;
+    width: 320px;
+    height: 40px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(145, 46, 145);
+    text-shadow: -2px 1px violet ;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+#signinPass{
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left:25px;
+    width: 320px;
+    height: 40px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(145, 46, 145);
+    text-shadow: -2px 1px violet ;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+#signinName{
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left:25px;
+    width: 320px;
+    height: 40px;
+    border: rgb(155, 51, 179) 2px solid;
+    border-radius: 20px;
+    box-shadow: violet  -5px 4px ;
+    color: rgb(145, 46, 145);
+    text-shadow: -2px 1px violet ;
+    background-color: cornsilk;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+hr{
+    margin-top: 40px;
+    color: black;
+    background-color: gray;
+    box-shadow: 0px 0px 10px gray;
+    margin-left: -10px;
+    height: 2px;
+}
+#eye{
+    position: absolute;
+    left: 300px;
+    top:230px;
+    color: gray;
+    z-index: 99999;
+}
+#eyeS{
+    position: absolute;
+    left: 302px;
+    top:135px;
+    color: gray;
+    z-index: 99999;
+}
+      </style>
+</body>
+</html>
